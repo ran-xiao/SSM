@@ -1,5 +1,9 @@
 package com.atguigu.mybatis.mapper;
 
+import com.atguigu.mybatis.pojo.User;
+
+import java.util.List;
+
 /**
  * @Description: mppper接口类似Dao层
  * @ClassName: UserMapper
@@ -10,4 +14,12 @@ package com.atguigu.mybatis.mapper;
 public interface UserMapper {
 
     int insertUser();
+
+    void updateUser();
+
+    int deleteUser();
+
+    User selectUser();
+
+    List<User> selectAll();
 }
